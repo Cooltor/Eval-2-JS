@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <title>Evaluation JS</title>
+</head>
+<body>
+    <header class="slider">
+        <div id="burger">
+        <div id="mySidenav" class="sidenav">
+                <a id="closeBtn" href="#" class="close">×</a>
+                <ul>
+                    <li><a href="#">Louer une voiture</a></li>
+                    <li><a href="#">Louer un utilitaire</a></li>
+                    <li><a href="#">Réserver un chauffeur</a></li>
+                    <li><a href="#">Découvrez nos agences</a></li>
+                    <li><a href="#">Mon compte</a></li>
+                    <li><a href="#">Contacts</a></li>
+                </ul>
+        </div>
+
+        <a href="#" id="openBtn">
+            <span class="burger-icon">
+                <span></span>
+                <span></span>
+                <span></span>
+                </span>
+        </a>
+        </div>
+
+        
+        <div id="header">
+            <div id="headTop">
+
+                <h1>Bienvenue à bord</h1>
+
+                <p>Location de voitures 24h/24 et 7j/7</p>
+
+            </div>
+            
+            
+            <div id="form">
+                <form action="">
+                    <label for="ToGo"></label>
+                    <input type="text" name="adress" id="adress" placeholder="Adresse de départ">
+
+                    <label for="date1"></label>
+                    <input type="date" name="date1" class="date" placeholder="Date de début de location">
+
+                    <label for="date2"></label>
+                    <input type="date" name="date2" class="date" placeholder="Date de fin de location"> 
+
+                    <button id="submit" type="submit">Valider ma recherche</button>
+                </form>
+            </div>
+
+
+        </div>
+
+        
+
+    </header>
+    <main>
+        <div id="mainTop">
+            <div>
+            <h2>7 résultats</h2>
+            </div>
+            <div>
+            <button id="scroll">Prix Croissant</button>
+            </div>
+
+        </div>
+
+        <div class="cars-container">
+
+            <div class="cars">
+
+                <img src="./img/vehicule1.png" alt="">
+
+                <div class="describe">
+                    <h2>Peugeot 208</h2>
+                    <p>Diesel, 5 portes,GPS, Autoradio, Forfait 1000km (0.5 par Km supplémentaire) </p>
+                    <p>999€ - Agence de Paris</p>
+                    <button>Réserver et payer</button>
+                </div>
+    
+                <hr>
+
+            </div>
+
+            <div class="cars">
+
+                <img src="./img/vehicule2.png" alt="">
+                <div class="describe">
+                    <h2>Ford Focus</h2>
+                    <p>Diesel, 5 portes,GPS, Autoradio, Forfait 1000km (0.5 par Km supplémentaire) </p>
+                    <p>999€ - Agence de Paris</p>
+                    <button>Réserver et payer</button>
+                </div>
+
+                <hr>
+
+            </div>
+
+            <div class="cars">
+
+                <img src="./img/vehicule3.png" alt="">
+
+                <div class="describe">
+                    <h2>Audi A1</h2>
+                    <p>Diesel, 5 portes,GPS, Autoradio, Forfait 1000km (0.55 par Km supplémentaire) </p>
+                    <p>1100€ - Agence de Paris</p>
+                    <button>Réserver et payer</button>
+                </div>
+
+            </div>
+
+            <div class="cars">
+
+                <img src="./img/vehicule4.png" alt="">
+
+                <div class="describe">
+                    <h2>Opel Mokka</h2>
+                    <p>Diesel, 5 portes,GPS, Autoradio, Forfait 1000km (0.4 par Km supplémentaire) </p>
+                    <p>1150€ - Agence de Paris</p>
+                    <button>Réserver et payer</button>
+                </div>
+
+                <hr>
+            </div>
+
+
+
+        </div>
+
+
+    </main>
+    <footer>
+        <img src="./img/agence.jpg" alt="">
+        <div id="store">
+            <p>Notre agence de Paris</p> 
+            <p>300 Boulevard Vaugirard</p>
+            <p>Ouvert 7j/7 de 9h à 13h et de 14h à 20h</p>
+            <p>01 49 78 21 33</p>
+            <p>contac@vtc.com</p>
+        </div>
+
+    </footer>
+    <script src="app.js"></script>
+    
+</body>
+</html>

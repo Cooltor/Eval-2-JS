@@ -1,0 +1,251 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: center;
+	align-content: space-between;
+
+}
+
+/* SIDENAV SIDENAV SIDENAV SIDENAV SIDENAV SIDENAV SIDENAV SIDENAV */
+
+/* Sidenav menu */
+
+#burger{
+    display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: flex-end;
+	align-items: baseline;
+	align-content: stretch;
+}
+
+
+
+.sidenav {
+    height: 300px;
+    width: 1530px;
+    position: fixed;
+    z-index: 1;
+    top: 40px;
+    left:-1850px;
+    background-color:white;
+    padding-top: 50px;
+    transition: left 0.5s ease;
+}
+
+  /* Sidenav menu links */
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 15px;
+    color: black;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: grey;
+}
+
+.sidenav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+  /* Active class */
+.sidenav.active {
+    left: 0;
+}
+
+  /* Close btn */
+.sidenav .close {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+}
+
+  /* Icône burger */
+.burger-icon span {
+    display: block;
+    width: 15px;
+    height: 2px;
+    background-color:grey;
+    margin: 3px 3px 3px 3px;
+    
+}
+
+#openBtn {
+    border: solid 1px grey;
+    border-radius: 2px;
+}
+
+/* HEADER HEADER HEADER HEADER HEADER HEADER HEADER HEADER HEADER */
+
+header{
+    background-image: url("../img/background.jpg");
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 500px;
+    
+    padding: 10px;
+}
+
+#header{
+    height:80%;
+    display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	align-items: center;
+	align-content: stretch;
+    color: white;
+}
+
+#form{
+    
+  background-color: rgba(255, 255, 255, 0.5);
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: center;
+	align-content: stretch;
+  margin: 0px;
+  padding: 0px;
+}
+
+#form input{
+    margin: 2px 30px 2px 5px;
+    border : none;
+    padding: 3px 1px 3px 1px;
+}
+
+#submit{
+    
+    border: none;
+    padding: 10px 30px 10px 30px;
+    background-color: rgb(0, 128, 0, 0.5);
+}
+
+#headTop p{
+    font-size: small;
+    margin-top: 10px;
+    
+}
+
+#headTop{
+    display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: center;
+	align-content: stretch;
+}
+/* MAIN MAIN MAIN MAIN MAIN MAIN MAIN MAIN MAIN MAIN MAIN MAIN */
+
+main{
+    width: 85%;
+    display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: center;
+	align-content: space-between;
+    padding: 20px;
+}
+
+.cars{
+    display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: center;
+	align-content: stretch;
+    padding: 10px 5px 30px 5px;
+}
+
+#mainTop{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	align-items: center;
+	align-content: space-between;
+    width: 80%;
+}
+
+main p {
+    padding-bottom: 10px;
+}
+
+main h2{
+    padding-bottom: 5px;
+}
+
+main img{
+    padding-right: 100px;
+}
+
+/* FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER */
+
+footer{
+    display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: center;
+	align-content: stretch;
+    width: 100%;
+    padding: 30px;
+}
+
+footer img{
+    width: 150px;
+    margin-right: 50px;
+}
+
+footer p {
+    padding-left: 20px;
+}
+
+/* OTHERS OTHERS OTHERS OTHERS OTHERS OTHERS OTHERS OTHERS */
+
+button {
+    background-color: green;
+    color: white;
+    border: solid 1px black;
+    border-radius: 3px;
+    padding: 5px;
+}
+
+#scroll{
+    background-color: rgb(228, 223, 223);
+    color: black;
+    padding: 5px;
+    width: 100%;
+}
+
+
+@media screen and (max-width: 500px) {
+    .describe{
+        display: none;
+    }
+
+    form input{
+        display: flex;
+        flex-direction: column;
+    }
+}
